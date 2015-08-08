@@ -191,11 +191,14 @@ $(document).ready(function(){
 	function kappagenerator(){
 		kappas = kappas + (viewbot.produce * viewbot.amount) + (botnet.amount * botnet.produce) + (supercomputer.amount*supercomputer.produce);	
 		kps = russian.produce * russian.amount + viewbot.produce * viewbot.amount + botnet.amount * botnet.produce + supercomputer.amount*supercomputer.produce;
+		var kpsd = viewbot.produce * viewbot.amount + botnet.amount * botnet.produce + supercomputer.amount*supercomputer.produce;
 		updatekappa();
 		$("#kappagenerated").text(kps.toFixed(1));
-		if(kps > 100)
+		if(kps > 100){
 			kps=100;
-		while(b<kps){
+			kpsd=100
+		}	
+		while(b<kpsd){
 			addkappa(generatename(),generatecolor(),0);
 			b++;			
 		}
@@ -204,7 +207,8 @@ $(document).ready(function(){
 	var russianamount = 0;
 	var a = 0;
 	setInterval(function russiangeneratecalc(){
-		russianamount = russianamount +russian.amount * russian.produce;
+		russianamount = russianamount + russian.amount * russian.produce;
+		console.log()
 		if(russianamount>=1){
 			kappas = kappas+russianamount
 			while(a < russianamount){
