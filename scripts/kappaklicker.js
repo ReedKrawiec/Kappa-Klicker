@@ -14,28 +14,28 @@ $(document).ready(function(){
 	var kappas = 0;
 	var kps;
 	var russian={
-		cost:100,
+		cost:10,
 		produce:0.1,
 		name:"Russian Spammers",
 		desc:"Add russian spammers to your arsenal.",
 		amount:0
 	}
 	var viewbot={
-		cost:1000,
+		cost:100,
 		produce:1,
 		name:"View/Spam Bots",
 		desc:"Buy the top of the line, best spam bots that kappas can buy.",
 		amount:0
 	}
 		var botnet={
-		cost:10000,
+		cost:1000,
 		produce:10,
 		name:"A Small Botnet",
 		desc:"Take advantage of a network of computers to spam Twitch Chat.",
 		amount:0
 	}
 		var supercomputer={
-		cost:100000,
+		cost:10000,
 		produce:100,
 		name:"Super Computer",
 		desc:"The best of the best computing devices possible, for use in your spamming purposes.",
