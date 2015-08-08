@@ -1,0 +1,236 @@
+html{
+	height:100%;
+	width:100%;
+	background-color:gray;
+	padding:0em;
+	margin:0em;
+}
+body{
+	padding:0em;
+	margin:0em;
+    overflow: auto;	
+}
+.shopcover{
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-color:black;
+	opacity:0.9;
+	z-index:3
+}
+.buycontainer{
+	height:100%;
+	position:absolute;
+	right:0;
+	color:white;
+	overflow:auto;
+	z-index:10;
+}
+.shopnumcontainer{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+.counter{
+	padding-right: 2em;
+}
+#shopcover{
+	display:none;
+}
+#shopcoverx{
+	cursor:pointer;
+}
+.shopcoverx{
+	color:white;
+	font-family:twitch;
+	font-size:2em;
+}
+.infobox{
+	font-size:2em;
+	font-family: twitch;
+}
+.flexcontainer{
+	align-items: center;
+	height:100%;
+	display:flex;
+}
+.twitchchat{
+	height:100%;
+	width:23em;
+	background-color:lightgray;
+    overflow: auto;	
+}
+.mod{
+	height:20px;
+	width:20px;
+}
+#kappa{
+	z-index: 2;
+	width:30em;
+	transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+#kappa:hover{
+	cursor: pointer;
+	width:35em;
+}
+#kappa:active{
+	width:30em;
+}
+.time{
+	font-size:0.8em;
+	color:#787880;
+}
+.modclear{
+	color:#787880;
+	padding-left: 2px;
+}
+.plus{
+	position:absolute;
+	z-index: 2;
+	font-family:Arial;
+	color:white;
+	font-size:4em;
+	pointer-events: none;
+	-webkit-text-stroke: 1px black;
+}
+.kappachat{
+	height:40px;
+	width:40px;
+}
+.twitchdummy{
+	width:20%;
+	height:3em;
+}
+.fullbutton{
+	width:100%;
+}
+.statscontainer{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:80%;
+	flex-direction:column;
+}
+.username{
+	padding-left:2px;
+}
+.stats{
+	font-family:twitch;
+	font-size:2em;
+	color:black;
+}
+.shopname{
+	font-size:2em;
+}
+.shopinfo{
+	background-color:green;
+	height:10%;
+	width:40em;
+	display:initial;
+}
+.shopbuttoncontain{
+	width:30em;
+	background-color:darkgray;
+	display:flex;
+	align-items:center;
+	justify-content:center;	
+	font-size:1em;
+	font-family:twitch;
+	color:black;	
+	outline:solid black;
+	padding-top:1px;
+	padding-bottom: 1px;
+	border-left: solid green;
+}
+.shopbuttoncontain:hover{
+	border-left: solid red;
+}
+.shopbutton{
+	height:4em;
+	width:4em;
+	border:solid black;
+
+}
+.shopscontainer{
+	height:10%;
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;	
+	font-family:twitch;
+	font-size:4em;
+	background-color:#6600CC;
+	border:solid black;
+	cursor:pointer;
+}
+.infobox{
+	height:80%;
+	width:60%;
+	background-color:darkgray;
+	position:absolute;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+.kappacontainer{
+	justify-content:center;
+	width:40%;
+	height:100%;
+	background-color:#393939;
+	display:flex;
+	align-items:center;
+	overflow:hidden;
+}
+.optionscontainer{
+	height:100%;
+	width:40%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:flex-start;
+	background-color:darkgray;
+}
+.twitchheader{
+	display:flex;
+	font-family:Arial;
+	justify-content:center;
+	align-items:center;
+	height:3em;
+	width:23em;
+	background-color:lightgray;
+	border-bottom: solid gray;
+	border-bottom-width: 1px;
+	position:absolute;
+	top:0em;
+}
+ul
+{
+	padding:0em;
+	margin:0em;
+    list-style-type: none;
+    font-family: Arial;
+
+}
+li{
+	padding:0em;
+	margin:0em;	
+	width:100%;
+	background-color:lightgray;
+	display:flex;
+	align-items:center;
+}
+@font-face {
+    font-family: twitch;
+    src:url("../fonts/DIMIS___.TTF");
+}
+.kappaklickertitle{
+	font-family:twitch;
+	font-size:4em;
+	height:20%;
+	color:#6600CC;
+}
+
