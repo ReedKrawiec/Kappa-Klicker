@@ -11,7 +11,7 @@ $(document).ready(function(){
 	var username;
 	var message;
 	var y;
-	var kappas = 1000000;
+	var kappas = 0;
 	var kps;
 	var russian={
 		cost:100,
