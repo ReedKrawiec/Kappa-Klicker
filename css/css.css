@@ -226,7 +226,7 @@ li{
 }
 @font-face {
     font-family: twitch;
-    src:url("../fonts/DIMIS___.TTF");
+    src:url("fonts/DIMIS___.TTF");
 }
 .kappaklickertitle{
 	font-family:twitch;
