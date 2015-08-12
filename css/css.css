@@ -16,6 +16,10 @@ body{
 	margin:0em;
     overflow: auto;	
 }
+p{
+    margin: 0px;
+    padding: 0px;
+	}	
 .shopcover{
 	position:absolute;
 	height:100%;
@@ -230,9 +234,29 @@ li{
 	display:flex;
 	align-items:center;
 }
+.maincontainer{
+	background-color: black;
+	text-align: center;
+	width:100%;
+}
+a{
+	text-decoration: none;
+}
+.mainlink{
+	font-family: Main;
+	font-size: 1em;
+	color:white;
+}
+.mainlink:hover{
+	color:yellow;
+}
 @font-face {
     font-family: twitch;
     src:url("../fonts/DIMIS___.TTF");
+}
+@font-face{
+	font-family: Main;
+	src:url("../fonts/BebasNeue.otf");
 }
 .kappaklickertitle{
 	font-family:twitch;
