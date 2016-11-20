@@ -1,0 +1,202 @@
+@import "imports/reset";
+@import "imports/Mixins";
+
+$nav-width:250px;
+$chat-width:350px;
+
+*{
+  box-sizing: border-box;
+}
+
+.page{
+  font-family: Arial;
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow:hidden;
+  &__nav{
+    flex-shrink:0;
+    background-color:#17141f;
+    width:$nav-width;
+    height:100%;
+    padding-top:5%;
+    .nav__item{
+      padding:10px;
+      font-size:1.1em;
+      color:#cbc8d0;
+      cursor:pointer;
+      &:hover{
+         background-color:lighten(#17141f,30%);   
+      }
+    }
+  }
+  &__main{
+    flex-shrink:1;
+    width:calc(100% - #{$nav-width} - #{$chat-width} - 80px);
+    height:100%;
+    margin:40px;
+    padding-top:30px;
+    .viewer__container{
+      width:100%;
+      height:60%;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      .main__viewer{
+        position:relative;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        width:100%;
+        height:650px;
+        background-color:black;
+        .viewer__kappa{
+          transition:all .25s;
+          cursor:pointer;
+          width:60%;
+          max-width:500px;
+        }
+        .viewer__kappa:active{
+          transform:scale(.9);
+        }
+      }  
+    }
+    .viewer__stats{
+      display:flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top:10px;
+      .stats__number{
+        font-size:1.2em;
+        color:indigo;
+        &--kpm{
+          margin-right:auto;
+        }
+      }
+    }
+    .shop__container{
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content: flex-start;
+      flex-wrap:wrap;
+      margin:40px;
+      .shopitem{
+        position:relative;
+        text-align:center;
+        color:indigo;
+        width:350px;
+        height:225px;
+        border:solid 2px indigo;
+        margin:10px;
+        font-size:1.3em;
+        .shopitem__buy{
+          position:absolute;
+          top:0;
+          right:5px;
+          font-size:2em;
+          cursor:pointer;
+        }
+        .shopitem__container{
+          font-size:1.5em;
+        }
+        &__infocontainer{
+          width:100%;
+          display:flex;
+          align-items: center;
+          justify-content: flex-end;
+          .shopitem__info{
+            margin:10px;
+            &--cost{
+              margin-right:auto;
+            }  
+         }         
+        }
+        &__title{
+          margin-top:20px;
+          padding-bottom:20px;
+          border-bottom:solid 2px indigo;
+        }
+      }
+    }
+    @include Media(930px){
+      width:calc(100% - #{$nav-width} - 80px);
+    }
+  }
+  &__chat{
+    flex-shrink:0;
+    background-color:#efeef1;
+    width:$chat-width;
+    height:100%;
+    overflow:auto;
+    position:relative;
+    .chat__header{
+      background-color:inherit;
+      position:absolute;
+      right:0px;
+      top:0px;
+      height:50px;
+      font-size:1.2em;
+      width:335px;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      border-bottom:solid 1px gray;
+    }
+    .chat__placeholder{
+      height:50px;
+      width:100%;
+    }
+    .chat__messages{
+      margin:15px;
+      .message{
+        font-size:1.1em;
+        margin:10px;
+        display:flex;
+        align-items:center;
+        justify-content: flex-start;
+        .message__kappa{
+          height:32px;
+          width:32px;
+        }
+        .message__badge{
+          height:16px;
+          width:16px;
+        }
+      }
+    }
+    @include Media(930px){
+      display:none;
+    }
+  }
+}
+
+.credits{
+  font-size:2em;
+  margin:20px;
+  p{
+        padding:10px;
+  }
+  a{
+    text-decoration: none;
+  };
+}
+
+@keyframes floatAnimation {
+    from {opacity: 1;transform:translateY(0px)}
+    to {opacity:0;transform: translateY(-30px)}
+}
+
+.floating{
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  animation: floatAnimation 1s linear;
+  font-size:3em;
+  color:white;
+  position:absolute;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "starblog",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.3.7",
+    "babel": "^6.5.2",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "cssnano": "^3.7.3",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.1.0",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-webpack": "^1.5.0",
+    "node-sass": "^3.8.0",
+    "optipng-bin": "^3.1.2",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0",
+    "ts-loader": "^0.8.2",
+    "typescript": "^2.0.0"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/ReedKrawiec/reedkrawiec.github.io.git",
+    "type": "git"
+  },
+  "author": "ReedKrawiec <reedkrawiec@gmail.com>",
+  "license": "MIT"
+}
