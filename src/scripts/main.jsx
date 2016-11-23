@@ -93,7 +93,8 @@ const KappaKlicker = ()=>{
   else if(state.current_page === 2){
     page_render = (
       <div className="credits">
-        <p><a href="https://reedkrawiec.github.io">Written by ReedKrawiec</a></p>
+        <p>Written by Reed Krawiec</p>
+        <p><a href="https://reedkrawiec.github.io">My Website</a></p>
         <p><a href="https://github.com/reedkrawiec">My Github</a></p>
         <p>
           <a href="https://twitch.tv">Kappa and design parodying Twitch.tv</a>
@@ -233,6 +234,7 @@ let main_reducer = (state = {
       return new_state;
     case "BUY_CLICK_UPGRADE":
       new_state.click_upgrades[action.id]++;
+      new_state.kappas-=new_state.click_costs[action.id];
       return new_state; 
     case "CLICK_KAPPA":
       let to_add = 1;
